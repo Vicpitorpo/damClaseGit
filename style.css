@@ -6,13 +6,27 @@ body{
 header{
     background-color: brown;
     color: rgb(255, 255, 255);
-    display: flex;
-    padding: 20px 20px;
+    padding: 10px 40px;
+    display: grid;
+    columns: 2;
+    position: fixed;
+    width: 100%;
+    flex-direction: row;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 30px;
 }
 nav{
-    text-align: right;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    gap:30px;
+    font-size: 1.5rem;
 }
 h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 3rem;
+}
+summary{
+    list-style: none;
 }
