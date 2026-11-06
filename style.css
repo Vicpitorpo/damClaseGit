@@ -1,3 +1,6 @@
+:root{
+    --rojo: rgb(134, 23, 23);
+}
 body{
     margin: 0;
     padding: 0;
@@ -7,26 +10,59 @@ header{
     background-color: brown;
     color: rgb(255, 255, 255);
     padding: 10px 40px;
-    display: grid;
-    columns: 2;
-    position: fixed;
-    width: 100%;
-    flex-direction: row;
-    grid-template-columns: repeat(2, minmax(0,1fr));
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 30px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    
 }
 nav{
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     padding: 0;
     margin: 0;
-    gap:30px;
+    gap: 30px;
     font-size: 1.5rem;
 }
-h1{
+.logo{
+    width: 100%;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.logo h1{
+    margin: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 3rem;
+    text-align: left;
+}
+details{
+    
 }
 summary{
     list-style: none;
+    cursor: pointer;
+    background-color: var(--rojo);
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid white;
 }
+
+
+
+
+
+  .mobile-panel { position: absolute; top: calc(100% + 13px); right: 0; width: min(340px, calc(100vw - 30px)); max-height: 75vh; overflow-y: auto; background: #1d1e2a; border: 1px solid #484a5a; border-radius: 5px; padding: 19px; box-shadow: 0 20px 50px #050508b0; display: grid; gap: 8px; }
+
+
+
+
+  .mobile-panel a:hover { color: var(--lima); }
+  .feature-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .game-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
