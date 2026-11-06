@@ -43,7 +43,7 @@ header a{
     text-align: left;
 }
 details{
-    
+    position: relative;
 }
 summary{
     list-style: none;
@@ -54,15 +54,20 @@ summary{
     border: 1px solid white;
 }
 
+.mobile-panel { 
+    position: absolute; 
+    top: 100%;
+    left: 0;
+    width: auto;
+    max-height: 75vh;
+    overflow-y: auto;
+    background: #1d1e2a;
+    border: 1px solid #484a5a;
+    border-radius: 5px;
+    padding: 19px;
+    box-shadow: 0 20px 50px #050508b0;
+    display: grid;
+    gap: 8px;
+    z-index: 10;
+}
 
-
-
-
-  .mobile-panel { position: absolute; top: calc(100% + 13px); right: 0; width: min(340px, calc(100vw - 30px)); max-height: 75vh; overflow-y: auto; background: #1d1e2a; border: 1px solid #484a5a; border-radius: 5px; padding: 19px; box-shadow: 0 20px 50px #050508b0; display: grid; gap: 8px; }
-
-
-
-
-  .mobile-panel a:hover { color: var(--lima); }
-  .feature-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
-  .game-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
