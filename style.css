@@ -5,6 +5,10 @@ body{
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
 }
 header{
     background-color: brown;
@@ -61,13 +65,32 @@ summary{
     width: auto;
     max-height: 75vh;
     overflow-y: auto;
-    background: #1d1e2a;
-    border: 1px solid #484a5a;
+    background: rgb(180, 25, 25);
+    border: 1px solid #000000;
     border-radius: 5px;
-    padding: 19px;
-    box-shadow: 0 20px 50px #050508b0;
+    padding: 19px 10px;
+    box-shadow: 0 20px 50px #000000b0;
     display: grid;
     gap: 8px;
     z-index: 10;
+    font-size: 1.3rem;
 }
 
+.arriba{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    background-color:  rgb(180, 25, 25);
+    padding: 13px 20px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.2rem;
+}
+footer{
+    background-color: #151515;
+    position: absolute;
+    width: 100%;
+    color: white;
+    text-align: center;
+    height: 150px;
+}
