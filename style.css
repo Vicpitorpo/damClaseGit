@@ -1,5 +1,6 @@
 :root{
     --rojo: rgb(134, 23, 23);
+    --hover: rgb(187, 17, 17);
 }
 body{
     margin: 0;
@@ -48,6 +49,17 @@ header a{
 details{
     position: relative;
 }
+.mobile-panel a{
+    display: block;
+    padding: 10px 10px;
+    color: white;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+.mobile-panel a:hover{
+    background-color: rgb(206, 5, 5);
+}   
+
 summary{
     list-style: none;
     cursor: pointer;
@@ -55,8 +67,12 @@ summary{
     padding: 10px 30px;
     border-radius: 10px;
     border: 1px solid white;
+    transition: all 0.3s ease;
 }
-
+summary:hover{
+    background-color: rgb(187, 17, 17);
+    box-shadow: #ffffff 0px 0px 10px 2px;
+}
 .mobile-panel { 
     position: absolute; 
     top: 100%;
@@ -66,11 +82,9 @@ summary{
     overflow-y: auto;
     background: rgb(180, 25, 25);
     border: 1px solid #000000;
-    border-radius: 5px;
-    padding: 19px 10px;
+    border-radius: 10px;
     box-shadow: 0 20px 50px #000000b0;
     display: grid;
-    gap: 8px;
     z-index: 10;
     font-size: 1.3rem;
 }
@@ -79,11 +93,17 @@ summary{
     position: fixed;
     bottom: 5%;
     right: 5%;
-    background-color:  rgb(180, 25, 25);
+    background-color:  brown;
     padding: 13px 20px;
     border-radius: 50%;
     color: white;
     font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+.arriba:hover{
+    background-color: var(--hover);
+    transform: translateY(-10px);
+    box-shadow: #333333 0px 5px 10px 2px;
 }
 footer{
     background-color: #151515;
@@ -96,10 +116,6 @@ footer{
 }
 main{
     padding: 20px 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    
 }
 .parrimg{
     display: flex;
@@ -107,8 +123,8 @@ main{
     justify-content: center;
 
 }
-img{
-    width: 40%;
+.spiderman{
+    width: 30%;
     margin: 10px;
     border-radius: 25px;
 }
@@ -118,3 +134,64 @@ img{
 .spiderfooter{
     background-color: #1B274D;
 }   
+.capheader{
+    background-color: #D42A3C;
+}
+.capfooter{
+    background-color: #2B2E3D;
+}   
+.ironheader{
+    background-color: #A72322;
+}
+.ironfooter{
+    background-color: #BF9C41;
+}   
+.hulkheader{
+    background-color: #314A2D;
+}
+.hulkfooter{
+    background-color: #425D7B;
+}   
+.drheader{
+    background-color: #DA4A4D;
+}
+.drfooter{
+    background-color: #222635;
+}   
+.hulkheader{
+    background-color: #314A2D;
+}
+.hulkfooter{
+    background-color: #425D7B;
+}   
+.hulkheader{
+    background-color: #314A2D;
+}
+.hulkfooter{
+    background-color: #425D7B;
+}   
+.ironman{
+    width: 15%;
+    margin: 10px;
+    border-radius: 25px;
+}
+.thor{
+    width: 30%;
+    margin: 10px;
+    border-radius: 25px;
+}
+.capitan{
+    width: 30%;
+    margin: 10px;
+    border-radius: 25px;
+}
+.hulk{
+    width: 25%;
+    margin: 10px;
+    border-radius: 25px;
+}
+.drstrange{
+    width: 17%;
+    margin: 10px;
+    border-radius: 25px;
+}
