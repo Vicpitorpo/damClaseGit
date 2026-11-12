@@ -116,6 +116,7 @@ footer{
 }
 main{
     padding: 20px 40px;
+    background-color: #FAF3DD;
 }
 .parrimg{
     display: flex;
