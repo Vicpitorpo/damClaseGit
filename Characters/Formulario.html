@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Marvel</title>
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header>
     <div class="logo">
-        <a href="../index.html"><h1>MARVEL</h1></a>
+        <a href="index.html"><h1>MARVEL</h1></a>
     </div>
     <nav>
         <details class="mobile-nav">
@@ -35,7 +36,27 @@
     <main>
         <h1>Formulario</h1>
         <form action="">
-            <label for=""></label>
+            <p>¿Cuanto le darias al diseño de esta increible pagina web? siendo 0 el minimo y 10 el maximo</p>
+            <input type="range" max="10"><br>
+            <label for="mejoras">¿Que mejorarias?</label><br>
+            <input type="text" id="mejoras" placeholder="Nada es perfecto" class="ftext"><br>
+            <label for="perro">¿Que tiene 2 patas y sangra mucho?</label><br>
+            <input type="text" id="perro" placeholder="Medio perro" class="ftext">
+            <p>Te ha servido de algo esta pagina web</p>
+            <input type="radio" id="si" name="servir" accept="">
+            <label for="si">Si</label><br>
+            <input type="radio" name="servir" id="no">
+            <label for="no">No</label><br>
+            <label for="fav">¿Cual es tu superheroe favorito?</label><br>
+            <input type="text" placeholder="The amazing bulk" class="ftext"><br>
+            <p>¿Estoy haciendo preguntas de relleno para que el formulario sea largo?</p>
+            <input type="radio" id="correcto" name="relleno">
+            <label for="correcto">Si</label><br>
+            <input type="radio" id="claro" name="relleno">
+            <label for="claro">Por supuesto</label><br>
+            <label for="superpoder">¿Si pudieras tener un superpoder cual sería?</label><br>          
+            <input type="text" id="superpoder" class="ftext" placeholder="Poder hacer que la gente se cague encima"><br>
+            <input type="submit" class="submit">
         </form>
     </main>
     <footer>

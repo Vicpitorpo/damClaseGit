@@ -2,130 +2,11 @@
     --rojo: rgb(134, 23, 23);
     --hover: rgb(187, 17, 17);
 }
-body{
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-a{text-decoration: none;}
-header{
-    background-color: brown;
-    color: rgb(255, 255, 255);
-    padding: 10px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-}
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    gap: 30px;
-    font-size: 1.5rem;
-}
-.logo{
-    width: 100%;
-}
-header a{
-    color: white;
-    cursor: pointer;
-}
-.logo h1{
-    margin: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 3rem;
-    text-align: left;
-}
-details{
-    position: relative;
-}
-.mobile-panel a{
-    display: block;
-    padding: 10px 10px;
-    color: white;
-    transition: all 0.3s ease;
-    border-radius: 10px;
-}
-.mobile-panel a:hover{
-    background-color: rgb(206, 5, 5);
-}   
-
-summary{
-    list-style: none;
-    cursor: pointer;
-    background-color: var(--rojo);
-    padding: 10px 30px;
-    border-radius: 10px;
-    border: 1px solid white;
-    transition: all 0.3s ease;
-}
-summary:hover{
-    background-color: rgb(187, 17, 17);
-    box-shadow: #ffffff 0px 0px 10px 2px;
-}
-.mobile-panel { 
-    position: absolute; 
-    top: 100%;
-    left: 0;
-    width: auto;
-    max-height: 75vh;
-    overflow-y: auto;
-    background: rgb(180, 25, 25);
-    border: 1px solid #000000;
-    border-radius: 10px;
-    box-shadow: 0 20px 50px #000000b0;
-    display: grid;
-    z-index: 10;
-    font-size: 1.3rem;
-}
-main{
-    margin: 0;
-    padding: 20px;
-    background-color: wheat;
-}
-.arriba{
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
-    background-color:  brown;
-    padding: 13px 20px;
-    border-radius: 50%;
-    color: white;
-    font-size: 1.2rem;
-    transition: all 0.3s ease;
-}
-.arriba:hover{
-    background-color: var(--hover);
-    transform: translateY(-10px);
-    box-shadow: #333333 0px 5px 10px 2px;
-}
-footer{
-    background-color: #151515;
-    position: absolute;
-    width: 97.9%;
-    color: white;
-    text-align: center;
-    height: 150px;
-    padding: 20px;
-}
 .principalpag{
     width: 300;
     height: 444;
 }
-.parrimg{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-}
 .spiderman{
     width: 30%;
     margin: 10px;
@@ -192,15 +73,13 @@ footer{
     margin: 10px;
     border-radius: 25px;
 }
-img{
-    transition: all 0.3s ease;
+.endgame{
+    width: 35%;
+    margin: 10px;
+    border-radius: 25px;
 }
-img:hover{
-    transform: scale(1.05);
-}
-
 .galaxia{
-    background: url(recursos/Posters/Galaxia.jpg) center center fixed;;
+    background: url(../recursos/Galaxia.jpg) center center fixed;
 }
 .grid{
     display: grid;
@@ -270,4 +149,29 @@ img:hover{
     box-shadow: #ffffff 0px 0px 10px 2px;
     transform: translateY(-5px);
     box-shadow: #000000 0px 5px 20px 5px;
+}
+.ftext{
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px black solid;
+    transition: all 0.3s ease;
+    margin: 10px 0px;
+}
+.ftext:focus{
+    transform: scale(1.05);
+}
+.submit{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px black solid;
+    transition: all 0.3s ease;
+    background-color: var(--rojo);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.4rem;
+}
+.submit:hover{
+    transform: scale(1.05);
+    background-color: rgb(206, 21, 21);
 }
