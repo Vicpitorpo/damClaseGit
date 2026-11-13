@@ -2,90 +2,112 @@
     --rojo: rgb(134, 23, 23);
     --hover: rgb(187, 17, 17);
 }
+
+/* Clase general para la página principal del sitio */
 .principalpag{
     width: 300;
     height: 444;
 }
 
-.spiderman{
-    width: 30%;
-    margin: 10px;
-    border-radius: 25px;
-}
+/* Colores de encabezado y pies de pagina para cada personaje */
 .spiderheader{
     background-color: #BA1710;
 }
 .spiderfooter{
     background-color: #1B274D;
-}   
+}
+
 .capheader{
     background-color: #D42A3C;
 }
 .capfooter{
     background-color: #2B2E3D;
-}   
+}
+
 .ironheader{
     background-color: #A72322;
 }
 .ironfooter{
     background-color: #BF9C41;
-}   
+}
+
 .hulkheader{
     background-color: #314A2D;
 }
 .hulkfooter{
     background-color: #425D7B;
-}   
+}
+
 .drheader{
     background-color: #7F3530;
 }
 .drfooter{
     background-color: #222635;
-}   
+}
+
 .thorheader{
     background-color: #D42A3C;
 }
 .thorfooter{
     background-color: #4e4e4e;
-}   
+}
+
+/* Tamaño y estilo de cada imagen individual del personaje */
+.spiderman{
+    width: 30%;
+    margin: 10px;
+    border-radius: 25px;
+}
+
 .ironman{
     width: 15%;
     margin: 10px;
     border-radius: 25px;
 }
+
 .thor{
     width: 30%;
     margin: 10px;
     border-radius: 25px;
 }
+
 .capitan{
     width: 30%;
     margin: 10px;
     border-radius: 25px;
 }
+
 .hulk{
     width: 25%;
     margin: 10px;
     border-radius: 25px;
 }
+
 .drstrange{
     width: 17%;
     margin: 10px;
     border-radius: 25px;
 }
+
 .endgame{
     width: 35%;
     margin: 10px;
     border-radius: 25px;
 }
+
+/* Fondo de la página de Guardianes de la Galaxia */
 .galaxia{
     background: url(../recursos/Galaxia.jpg) center center fixed;
 }
+
+/* Grid para organizar tarjetas de guardianes de la galaxia */
 .grid{
     display: grid;
     grid-template-columns: repeat(4, minmax(300px, 1fr));
     gap: 20px;
 }
+
+/* Contenedor visual para cada tarjeta de personaje de guardianes de la galaxia */
 .tarjetas{
     display: flex;
     align-items: center;
@@ -96,42 +118,103 @@
     border: white 2px solid;
     transition: all 0.3s ease;
 }
+
 .tarjetas:hover{
     transform: translateY(-20px);
     box-shadow: #ffffff 0px 0px 33px 2px;
 }
+
+/* Gradientes de color para cada personaje de Guardianes de la Galaxia */
 .peter{
-    background: linear-gradient( #A72322, #BF9C41);
+    background: linear-gradient(#A72322, #BF9C41);
 }
+
 .gamora{
-    background: linear-gradient( #7B7614, #ACA4AC);
+    background: linear-gradient(#7B7614, #ACA4AC);
 }
+
 .drax{
-    background: linear-gradient( #ACA4AC, #D2A27A);
+    background: linear-gradient(#ACA4AC, #D2A27A);
 }
+
 .groot{
-    background: linear-gradient( #D2A27A, #A3B9A4);
+    background: linear-gradient(#D2A27A, #A3B9A4);
 }
+
 .rocket{
-    background: linear-gradient( #A37961, #36231D);
+    background: linear-gradient(#A37961, #36231D);
 }
+
 .mantis{
-    background: linear-gradient( #3F6C54, #A3B9A0);
+    background: linear-gradient(#3F6C54, #A3B9A0);
 }
+
+/* Ironman volando */
 .volando{
     width: 20%;
     display: block;
     animation: mover 5s infinite;
-    }
+}
 
 @keyframes mover {
     0%{
         transform: translateX(-1000px);
-    }   
+    }
     100%{
         transform: translateX(2000px);
     }
 }
+
+/* Estilos de los formularios del sitio */
+.form{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    background-color: brown;
+    border-radius: 10px;
+    border: 2px black solid;
+    color: white;
+    transition: all 0.3s ease;
+    padding: 20px;
+    margin: 30px;
+}
+
+.form:hover{
+    background-color: rgb(206, 21, 21);
+    box-shadow: #ffffff 0px 0px 10px 2px;
+    transform: translateY(-5px);
+    box-shadow: #000000 0px 5px 20px 5px;
+}
+
+.ftext{
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px black solid;
+    transition: all 0.3s ease;
+    margin: 10px 0px;
+}
+
+.ftext:focus{
+    transform: scale(1.05);
+}
+
+.submit{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px black solid;
+    transition: all 0.3s ease;
+    background-color: var(--rojo);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.4rem;
+}
+
+.submit:hover{
+    transform: scale(1.05);
+    background-color: rgb(206, 21, 21);
+}
+
+
 .form{
 
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;

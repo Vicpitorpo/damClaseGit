@@ -9,6 +9,8 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 a{text-decoration: none;}
+
+/*formato cabeceras*/
 header{
     background-color: brown;
     color: rgb(255, 255, 255);
@@ -44,6 +46,7 @@ header a{
     font-size: 3rem;
     text-align: left;
 }
+/*Lista desplegable del panel de navegacion*/
 details{
     position: relative;
 }
@@ -86,12 +89,27 @@ summary:hover{
     z-index: 10;
     font-size: 1.3rem;
 }
+/*contenido principal*/
 main{
     margin: 0;
     padding: 20px 50px;
     background-color: wheat;
     min-height: calc(100vh - 308px);
 }
+/*separacion con las imagenes*/
+.parrimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*Imagenes*/
+img{
+    transition: all 0.3s ease;
+}
+img:hover{
+    transform: scale(1.05);
+}
+/*boton para volver arriba*/
 .arriba{
     position: fixed;
     bottom: 5%;
@@ -108,17 +126,7 @@ main{
     transform: translateY(-10px);
     box-shadow: #333333 0px 5px 10px 2px;
 }
-.parrimg{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-img{
-    transition: all 0.3s ease;
-}
-img:hover{
-    transform: scale(1.05);
-}
+/*pie de pagina*/
 footer{
     background-color: #151515;
     position: absolute;
