@@ -217,7 +217,7 @@ img:hover{
 }
 .tarjetas:hover{
     transform: translateY(-20px);
-    box-shadow: ;
+    box-shadow: #ffffff 0px 0px 33px 2px;
 }
 .peter{
     background: linear-gradient( #A72322, #BF9C41);
@@ -236,4 +236,35 @@ img:hover{
 }
 .mantis{
     background: linear-gradient( #3F6C54, #A3B9A0);
+}
+.volando{
+    width: 20%;
+    display: block;
+    animation: mover 5s infinite;
+    }
+
+@keyframes mover {
+    0%{
+        transform: translateX(-1000px);
+    }   
+    100%{
+        transform: translateX(2000px);
+    }
+}
+.form{
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    background-color: brown;
+    border-radius: 10px;
+    border: 2px black solid;
+    color: white;
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+.form:hover{
+    background-color: rgb(206, 21, 21);
+    box-shadow: #ffffff 0px 0px 10px 2px;
+    transform: translateY(-5px);
+    box-shadow: #000000 0px 5px 20px 5px;
 }
