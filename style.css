@@ -114,9 +114,9 @@ footer{
     height: 150px;
     padding: 20px;
 }
-main{
-    padding: 20px 40px;
-    background-color: #FAF3DD;
+.principalpag{
+    width: 300;
+    height: 444;
 }
 .parrimg{
     display: flex;
